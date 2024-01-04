@@ -1,9 +1,13 @@
-const Card = props => {
+import CardImage from '../card-image/CardImage';
+import CardName from '../card-name/CardName';
+import CardSubtitle from '../card-subtitle/CardSubtitle';
+
+const Card = ({ url, name, subtitle }) => {
 	return (
 		<div>
-			<img src={props.url} />
-			<h3>{props.name}</h3>
-			<span>{props.subtitle}</span>
+			<CardImage url={url} />
+			<CardName name={name} />
+			<CardSubtitle subtitle={subtitle} />
 		</div>
 	);
 };
