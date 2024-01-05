@@ -19,13 +19,13 @@ const App = () => {
 					<Valuation text='Rated 5 Stars in Report Guru' />
 					<Valuation text='Rated 5 Stars in BestTech' />
 				</Ratings>
+				<Card
+					name='Adrian'
+					subtitle='Verified buyer'
+					url='./public/assets/images/image-colton.jpg'
+					information='“ We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent! ”'
+				/>
 			</Header>
-			<Card
-				name='Adrian'
-				subtitle='Verified buyer'
-				url='./public/assets/images/image-colton.jpg'
-				information='“ We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent! ”'
-			/>
 		</>
 	);
 };
