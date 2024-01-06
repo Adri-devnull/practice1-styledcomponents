@@ -1,4 +1,4 @@
-import Card from './components/card/Card';
+import Cards from './components/cards/Cards';
 import Header from './components/header/Header';
 import Headline from './components/headline/Headline';
 import Information from './components/information/Information';
@@ -15,17 +15,16 @@ const App = () => {
 					<Information text='We only provide great products combined with excellent customer service. See what our satisfied customers are saying about our services.' />
 				</Headline>
 				<Ratings>
-					<Valuation text='Rated 5 Stars in Reviews' />
-					<Valuation text='Rated 5 Stars in Report Guru' />
-					<Valuation text='Rated 5 Stars in BestTech' />
+					<Valuation text='Rated 5 Stars in Reviews' top={-80} left={-380} />
+					<Valuation
+						text='Rated 5 Stars in Report Guru'
+						top={-10}
+						left={-330}
+					/>
+					<Valuation text='Rated 5 Stars in BestTech' top={60} left={-280} />
 				</Ratings>
-				<Card
-					name='Adrian'
-					subtitle='Verified buyer'
-					url='./public/assets/images/image-colton.jpg'
-					information='“ We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent! ”'
-				/>
 			</Header>
+			<Cards />
 		</>
 	);
 };

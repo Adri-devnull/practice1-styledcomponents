@@ -5,9 +5,9 @@ import CardName from '../card-name/CardName';
 import CardSubtitle from '../card-subtitle/CardSubtitle';
 import NameSubtitle from '../name-subtitle/NameSubtitle';
 
-const Card = ({ url, name, subtitle, information }) => {
+const Card = ({ url, name, subtitle, information, top, left }) => {
 	return (
-		<CardContainer>
+		<CardContainer top={top} left={left}>
 			<NameSubtitle>
 				<div>
 					<CardImage url={url} />

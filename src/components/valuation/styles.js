@@ -10,6 +10,16 @@ const StyledValuation = styled.div`
 	font-weight: bold;
 	padding: 20px 0px;
 	border-radius: 10px;
+
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-direction: row;
+		width: 445px;
+		justify-content: space-evenly;
+		position: absolute;
+		left: ${({ left }) => left + 'px'};
+		top: ${({ top }) => top + 'px'};
+	}
 `;
 
 export { StyledValuation };
